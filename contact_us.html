@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="utf-8">
+            <title>Contact us!</title>
+    </header>
+
+    <body>
+        <h1>CONTACT US</h1>
+        <p>Purpose of contact:
+            <select name = "purpose">
+                <option value="">Please select</option>
+                <option value="business">Business</option>
+                <option value="personal">Personal</option>
+            </select>
+        </p>
+        <p>Name:
+            <input type="text" name="name" min="1" max="50" required/>
+        </p>
+        <p>Email:
+            <input type="email" name="email" required/>
+        </p>
+        <p>Phone:
+            <input type="number" name="phone" required/>
+        </p>
+        <p>Prefered contact method:
+            <input type="radio" name="method" value="email" />Email
+            <input type="radio" name="method" value="phone" />Phone
+        </p>
+        <p>Contact day(s):<br>
+            <input type="checkbox" name="day1" value="mon" />Monday<br>
+            <input type="checkbox" name="day2" value="mon" />Tuesday<br>
+            <input type="checkbox" name="day3" value="mon" />Wednesday<br>
+            <input type="checkbox" name="day4" value="mon" />Thursday<br>
+            <input type="checkbox" name="day5" value="mon" />Friday<br>
+            <input type="checkbox" name="day6" value="mon" />Saturday<br>
+            <input type="checkbox" name="day7" value="mon" />Sunday
+        </p>
+        <p>Message:<br>
+            <textarea cols='50' rows='5'></textarea>
+        </p>
+        <input type='reset' name='not-needed' value='Reset input' /> <input type='submit' name='sign-up' value='Submit ' />
+    </body>
+</html>
